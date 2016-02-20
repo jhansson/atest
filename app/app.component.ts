@@ -1,14 +1,15 @@
 import {Component} from 'angular2/core';
+import {Hero} from './hero';
 
 @Component({
   selector: 'my-app',
   template: `
   <h1>{{title}}</h1>
-  <h2>My favorite hero is: {{myHero}}</h2>
+  <h2>My favorite hero is: {{myHero.name}}</h2>
   <p>Heroes:</p>
   <ul>
     <li *ngFor="#hero of heroes">
-      {{hero}}
+      {{hero.name}}
     </li>
   </ul>
   `
@@ -16,6 +17,11 @@ import {Component} from 'angular2/core';
 
 export class AppComponent {
   title = 'Tour of Heroes';
-  heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+  heroes = [
+    new Hero(1, 'Windstorm'),
+    new Hero(13, 'Bombasto'),
+    new Hero(15, 'Magneta'),
+    new Hero(20, 'Tornado')
+  ];
   myHero = this.heroes[0];
 }
