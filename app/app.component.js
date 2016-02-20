@@ -34,7 +34,7 @@ System.register(['angular2/core', './hero'], function(exports_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n  <h1>{{title}}</h1>\n  <h2>My favorite hero is: {{myHero.name}}</h2>\n  <p>Heroes:</p>\n  <ul>\n    <li *ngFor=\"#hero of heroes\">\n      {{hero.name}}\n    </li>\n  </ul>\n  <p *ngIf=\"heroes.length > 3\">There are many heroes!</p>\n  "
+                        template: "\n  <h1>{{title}}</h1>\n  <h2>My favorite hero is: {{myHero.name}}</h2>\n  <p>Heroes:</p>\n  <ul>\n    <li *ngFor=\"#hero of heroes\">\n      {{hero.name}}\n    </li>\n  </ul>\n  <p *ngIf=\"heroes.length > 3\">There are many heroes!</p>\n  <key-up2></key-up2>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

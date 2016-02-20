@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {Hero} from './hero'
+import {KeyUpComponent_v2} from './keyup.components';
 
 @Component({
   selector: 'my-app',
@@ -13,6 +14,7 @@ import {Hero} from './hero'
     </li>
   </ul>
   <p *ngIf="heroes.length > 3">There are many heroes!</p>
+  <key-up2></key-up2>
   `
 })
 
