@@ -20,12 +20,13 @@ System.register(['angular2/core'], function(exports_1) {
             AppComponent = (function () {
                 function AppComponent() {
                     this.title = 'Tour of Heroes';
-                    this.myHero = 'Windstorm';
+                    this.heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+                    this.myHero = this.heroes[0];
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n  <h1>{{title}}</h1>\n  <h2>My favorite hero is: {{myHero}}</h2>\n  "
+                        template: "\n  <h1>{{title}}</h1>\n  <h2>My favorite hero is: {{myHero}}</h2>\n  <p>Heroes:</p>\n  <ul>\n    <li *ngFor=\"#hero of heroes\">\n      {{hero}}\n    </li>\n  </ul>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

@@ -5,10 +5,17 @@ import {Component} from 'angular2/core';
   template: `
   <h1>{{title}}</h1>
   <h2>My favorite hero is: {{myHero}}</h2>
+  <p>Heroes:</p>
+  <ul>
+    <li *ngFor="#hero of heroes">
+      {{hero}}
+    </li>
+  </ul>
   `
 })
 
 export class AppComponent {
   title = 'Tour of Heroes';
-  myHero = 'Windstorm';
+  heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+  myHero = this.heroes[0];
 }
