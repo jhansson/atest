@@ -5,7 +5,7 @@ import {Component} from 'angular2/core';
   template: `
     <input #newHero
       (keyup.enter)="addHero(newHero.value)"
-      (blur)="addHero(newHero.value); nweHero.value='' ">
+      (blur)="addHero(newHero.value); newHero.value='' ">
 
     <button (click)=addHero(newHero.value)>Add</button>
 
