@@ -1,5 +1,5 @@
 import {bootstrap} from 'angular2/platform/browser'
 import {AppComponent} from './app.component'
-//import {KeyUpComponent_v2} from './keyup.components';
+import {LittleTourComponent} from './little-tour.components';
 
-bootstrap(AppComponent);
+bootstrap(LittleTourComponent);
