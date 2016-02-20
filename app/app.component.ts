@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {Hero} from './hero';
+import {Hero} from './hero'
 
 @Component({
   selector: 'my-app',
@@ -12,6 +12,7 @@ import {Hero} from './hero';
       {{hero.name}}
     </li>
   </ul>
+  <p *ngIf="heroes.length > 3">There are many heroes!</p>
   `
 })
 
